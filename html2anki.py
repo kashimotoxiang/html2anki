@@ -51,7 +51,7 @@ class Meta():
         def item_join(items):
             result = []
             for item in items:
-                result.append(item)
+                result.append(item.replace('\t', '').replace('\n', '<br>'))
                 result.append('\t')
             result.pop()
             result.append('\n')
